@@ -10,6 +10,10 @@ This website is made with JavaScript, ReactJS, HTML and CSS (obviously).
 
 # How to run it ? 
 
+You can access it via : 
+
+https://energenius.vercel.app
+
 In order to test the website on your local machine, you'll need to install Node JS.
 Then, you have to install the following packages : 
 
