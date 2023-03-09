@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
           <Stack direction="row">
               <Routes>
-                <Route path="/" exact element={<MainPage/>}/>
+                <Route path="/" exact element={<LoginPage/>}/>
                   <Route path="/main-page" exact element={<MainPage/>}/>
                   <Route path="/login" exact element={<LoginPage/>}/>
                   <Route path="/manage-portfolios" exact element={<ManagePortfolios/>}/>
