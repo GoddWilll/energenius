@@ -3,7 +3,8 @@ import NavigationBar from './components/NavigationBar';
 import SideMenu from './components/SideMenu';
 import MainPage from './pages/MainPage';
 import { Stack } from "@mui/material";
-import { BrowserRouter, Routes , Route} from 'react-router-dom';
+import { BrowserRouter, Routes , Route, Navigate} from 'react-router-dom';
+
 import { Sidebar, Menu, MenuItem, useProSidebar} from 'react-pro-sidebar';
 import ManagePortfolios from './pages/ManagePortfolios';
 import ManageMeters from './pages/ManageMeters';
@@ -21,8 +22,7 @@ function App() {
       <BrowserRouter>
           <Stack direction="row">
               <Routes>
-                  <Route path='' exact element={<LoginPage/>}/>
-                  <Route path="/" exact element={<LoginPage/>}/>
+                  <Route path='/' element={<Navigate to="/login"/>}/>
                   <Route path="/main-page" exact element={<MainPage/>}/>
                   <Route path="/login" exact element={<LoginPage/>}/>
                   <Route path="/manage-portfolios" exact element={<ManagePortfolios/>}/>
