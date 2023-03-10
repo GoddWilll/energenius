@@ -16,6 +16,7 @@ import Notifications from './pages/Notifications';
 import LoginPage from './pages/LoginPage';
 import RegisterNewAccount from './pages/RegisterNewAccount';
 import ResetPassword from './pages/ResetPassword';
+import RegistrationSuccess from './pages/RegistrationSuccess';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Stack direction="row">
               <Routes>
                   <Route path='/' element={<Navigate to="/login"/>}/>
+                  <Route path='/registration-success' exact element={<RegistrationSuccess/>}/>
                   <Route path="/main-page" exact element={<MainPage/>}/>
                   <Route path="/login" exact element={<LoginPage/>}/>
                   <Route path="/manage-portfolios" exact element={<ManagePortfolios/>}/>

@@ -107,7 +107,9 @@ const RegisterNewAccount = () => {
               </Grid>
             </Box>
             <ThemeProvider theme={theme}>
-              <Button variant='contained' color='primary' sx={{mt:2, width:'80%', mb:2}}>Sign up</Button>
+              <Link to='/registration-success' className='link-4' style={{display: 'inline-block', mt:2, width:'80%', mb:5}}>
+                <Button variant='contained' color='primary' sx={{mt:2, width:'100%', mb:2}}>Sign up</Button>
+              </Link>
             </ThemeProvider>
             <Box sx={{mb:2}}>
               <Link className='link-2' to='/login'>
