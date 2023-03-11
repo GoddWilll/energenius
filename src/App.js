@@ -17,6 +17,8 @@ import LoginPage from './pages/LoginPage';
 import RegisterNewAccount from './pages/RegisterNewAccount';
 import ResetPassword from './pages/ResetPassword';
 import RegistrationSuccess from './pages/RegistrationSuccess';
+import CreateNewPassword from './pages/CreateNewPassword';
+import NewPasswordSuccess from './pages/NewPasswordSuccess';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
               <Routes>
                   <Route path='/' element={<Navigate to="/login"/>}/>
                   <Route path='/registration-success' exact element={<RegistrationSuccess/>}/>
+                  <Route path='/create-pass' exact element={<CreateNewPassword/>}/>
+                  <Route path='/newpasswdsuccess' exact element={<NewPasswordSuccess/>}/>
                   <Route path="/main-page" exact element={<MainPage/>}/>
                   <Route path="/login" exact element={<LoginPage/>}/>
                   <Route path="/manage-portfolios" exact element={<ManagePortfolios/>}/>
