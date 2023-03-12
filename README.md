@@ -18,5 +18,5 @@ In order to test the website on your local machine, you'll need to install Node 
 Then, you have to install the following packages : 
 
 ```
-npm install react-router-dom react-pro-sidebar emotion/react emotion/styled mui/material mui/icons-material axios react-dom
+npm install react-router-dom react-pro-sidebar emotion/react emotion/styled mui/material mui/icons-material axios react-dom react-window
 ```
