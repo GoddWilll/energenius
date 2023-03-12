@@ -30,7 +30,7 @@ const SideMenu = () => {
     return (
     
     <div>
-        <Sidebar style={{ height:"100vh"}}>
+        <Sidebar style={{ height:"100%"}}>
             <Menu>
                 <MenuItem
                     icon= {<MenuOutlinedIcon/>}
