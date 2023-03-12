@@ -4,6 +4,7 @@ import {Stack, Box, Grid} from '@mui/material';
 import logo from '../resources/logo.png';
 import AccountMenu from '../components/AccountMenu';
 import TopMenu from '../components/TopMenu';
+import TempList from '../components/TempList';
 
 const ManageMeters = () => {
   const pageAddress = "/manage-meters";
@@ -13,6 +14,7 @@ const ManageMeters = () => {
       <SideMenu/>
       <Stack sx={{display:'flex', width:"100%"}}>
         <TopMenu pageAddress={pageAddress} pageName={pageName}/>
+        <TempList/>
       </Stack>
     </Stack>
   );

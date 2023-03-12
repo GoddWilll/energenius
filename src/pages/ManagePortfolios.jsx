@@ -5,6 +5,7 @@ import logo from '../resources/logo.png';
 import AccountMenu from '../components/AccountMenu';
 import TopMenu from '../components/TopMenu';
 import ElementsList from '../components/ElementsList';
+import TempList from '../components/TempList';
 
 const ManagePortfolios = () => {
   const pageAddress = "/manage-portfolios";
@@ -14,11 +15,7 @@ const ManagePortfolios = () => {
       <SideMenu/>
       <Stack sx={{display:'flex', width:"100%"}}>
         <TopMenu pageAddress={pageAddress} pageName={pageName}/>
-        <Grid align='center'>
-          <Card sx={{width:'40%', m:2, height:'60%'}}>
-            <ElementsList/>
-          </Card>
-        </Grid>
+        <TempList/>
       </Stack>
       
     </Stack>
